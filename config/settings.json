@@ -1,0 +1,6 @@
+{
+	"defaultTemplate": "react-basic",
+	"notifyUpdates": true,
+	"useBabel": true,
+	"useEslint": true
+}

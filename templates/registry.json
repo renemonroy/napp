@@ -1,0 +1,401 @@
+{
+  "react-advanced": {
+    "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced",
+    "package": {
+      "name": "react-advanced",
+      "version": "0.1.0",
+      "description": "Template for bigger projects. Uses router, redux, sagas, immutable and others.",
+      "dependencies": {
+        "babel-polyfill": "*",
+        "history": "^4.6.1",
+        "immutable": "^3.8.1",
+        "react": "15.4.2",
+        "react-dom": "15.4.2",
+        "react-redux": "^5.0.3",
+        "react-router-dom": "^4.0.0-beta.8",
+        "react-router-redux": "^5.0.0-alpha.4",
+        "redux": "^3.6.0",
+        "redux-logger": "^3.0.0",
+        "redux-saga": "^0.14.3"
+      },
+      "devDependencies": {
+        "babel-eslint": "*",
+        "babel-preset-es2015": "*",
+        "babel-preset-react": "*",
+        "eslint": "*",
+        "eslint-config-airbnb": "*",
+        "eslint-config-airbnb-base": "*",
+        "eslint-plugin-import": "*",
+        "eslint-plugin-jsx-a11y": "*",
+        "eslint-plugin-react": "*"
+      },
+      "private": true,
+      "scripts": {
+        "start": "napp start"
+      }
+    },
+    "tree": {
+      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced",
+      "name": "react-advanced",
+      "children": [
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/.babelrc",
+          "name": ".babelrc",
+          "size": 43,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/.eslintignore",
+          "name": ".eslintignore",
+          "size": 64,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/.eslintrc",
+          "name": ".eslintrc",
+          "size": 1469,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/.gitignore",
+          "name": ".gitignore",
+          "size": 521,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/README.md",
+          "name": "README.md",
+          "size": 17,
+          "extension": ".md"
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/package.json",
+          "name": "package.json",
+          "size": 871,
+          "extension": ".json"
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/public",
+          "name": "public",
+          "children": [
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/public/index.html",
+              "name": "index.html",
+              "size": 236,
+              "extension": ".html"
+            }
+          ],
+          "size": 236
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src",
+          "name": "src",
+          "children": [
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/actions",
+              "name": "actions",
+              "children": [
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/actions/index.js",
+                  "name": "index.js",
+                  "size": 55,
+                  "extension": ".js"
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/actions/ui.js",
+                  "name": "ui.js",
+                  "size": 176,
+                  "extension": ".js"
+                }
+              ],
+              "size": 231
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components",
+              "name": "components",
+              "children": [
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/app",
+                  "name": "app",
+                  "children": [
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/app/index.js",
+                      "name": "index.js",
+                      "size": 427,
+                      "extension": ".js"
+                    },
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/app/index.styl",
+                      "name": "index.styl",
+                      "size": 46,
+                      "extension": ".styl"
+                    }
+                  ],
+                  "size": 473
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/ui-routes-manager",
+                  "name": "ui-routes-manager",
+                  "children": [
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/ui-routes-manager/index.js",
+                      "name": "index.js",
+                      "size": 368,
+                      "extension": ".js"
+                    }
+                  ],
+                  "size": 368
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/ui-view",
+                  "name": "ui-view",
+                  "children": [
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/ui-view/index.js",
+                      "name": "index.js",
+                      "size": 330,
+                      "extension": ".js"
+                    },
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/ui-view/index.styl",
+                      "name": "index.styl",
+                      "size": 44,
+                      "extension": ".styl"
+                    }
+                  ],
+                  "size": 374
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views",
+                  "name": "views",
+                  "children": [
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/about",
+                      "name": "about",
+                      "children": [
+                        {
+                          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/about/index.js",
+                          "name": "index.js",
+                          "size": 204,
+                          "extension": ".js"
+                        },
+                        {
+                          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/about/index.styl",
+                          "name": "index.styl",
+                          "size": 0,
+                          "extension": ".styl"
+                        }
+                      ],
+                      "size": 204
+                    },
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/home",
+                      "name": "home",
+                      "children": [
+                        {
+                          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/home/index.js",
+                          "name": "index.js",
+                          "size": 200,
+                          "extension": ".js"
+                        },
+                        {
+                          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/home/index.styl",
+                          "name": "index.styl",
+                          "size": 30,
+                          "extension": ".styl"
+                        }
+                      ],
+                      "size": 230
+                    },
+                    {
+                      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/components/views/index.js",
+                      "name": "index.js",
+                      "size": 92,
+                      "extension": ".js"
+                    }
+                  ],
+                  "size": 526
+                }
+              ],
+              "size": 1741
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/constants",
+              "name": "constants",
+              "children": [
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/constants/actionTypes.js",
+                  "name": "actionTypes.js",
+                  "size": 97,
+                  "extension": ".js"
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/constants/initialState.js",
+                  "name": "initialState.js",
+                  "size": 92,
+                  "extension": ".js"
+                }
+              ],
+              "size": 189
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/index.js",
+              "name": "index.js",
+              "size": 777,
+              "extension": ".js"
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/reducers",
+              "name": "reducers",
+              "children": [
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/reducers/index.js",
+                  "name": "index.js",
+                  "size": 228,
+                  "extension": ".js"
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/reducers/ui.js",
+                  "name": "ui.js",
+                  "size": 465,
+                  "extension": ".js"
+                }
+              ],
+              "size": 693
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/sagas",
+              "name": "sagas",
+              "children": [
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/sagas/index.js",
+                  "name": "index.js",
+                  "size": 553,
+                  "extension": ".js"
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/sagas/ui.js",
+                  "name": "ui.js",
+                  "size": 769,
+                  "extension": ".js"
+                }
+              ],
+              "size": 1322
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/utilities",
+              "name": "utilities",
+              "children": [
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/utilities/configureRoutes.js",
+                  "name": "configureRoutes.js",
+                  "size": 253,
+                  "extension": ".js"
+                },
+                {
+                  "path": "/Users/rmonr1/Development/Nike/napp/templates/react-advanced/src/utilities/configureStore.js",
+                  "name": "configureStore.js",
+                  "size": 635,
+                  "extension": ".js"
+                }
+              ],
+              "size": 888
+            }
+          ],
+          "size": 5841
+        }
+      ],
+      "size": 9062
+    }
+  },
+  "react-basic": {
+    "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic",
+    "package": {
+      "name": "react-basic",
+      "version": "0.1.0",
+      "description": "Template that uses react and react-dom for quick prototypes.",
+      "dependencies": {
+        "react": "15.4.2",
+        "react-dom": "15.4.2"
+      },
+      "devDependencies": {
+        "babel-preset-es2015": "*",
+        "babel-preset-react": "*",
+        "eslint-plugin-import": "*",
+        "eslint-plugin-jsx-a11y": "*",
+        "eslint-plugin-react": "*",
+        "eslint-config-airbnb": "*",
+        "eslint-config-airbnb-base": "*"
+      }
+    },
+    "tree": {
+      "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic",
+      "name": "react-basic",
+      "children": [
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/.babelrc",
+          "name": ".babelrc",
+          "size": 43,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/.eslintignore",
+          "name": ".eslintignore",
+          "size": 19,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/.eslintrc",
+          "name": ".eslintrc",
+          "size": 1469,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/.gitignore",
+          "name": ".gitignore",
+          "size": 521,
+          "extension": ""
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/package.json",
+          "name": "package.json",
+          "size": 444,
+          "extension": ".json"
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/public",
+          "name": "public",
+          "children": [
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/public/index.html",
+              "name": "index.html",
+              "size": 236,
+              "extension": ".html"
+            }
+          ],
+          "size": 236
+        },
+        {
+          "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/src",
+          "name": "src",
+          "children": [
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/src/app.js",
+              "name": "app.js",
+              "size": 140,
+              "extension": ".js"
+            },
+            {
+              "path": "/Users/rmonr1/Development/Nike/napp/templates/react-basic/src/index.js",
+              "name": "index.js",
+              "size": 152,
+              "extension": ".js"
+            }
+          ],
+          "size": 292
+        }
+      ],
+      "size": 3024
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+	"requiredFiles": [
+		"public/index.html",
+		"src/index.js"
+	],
+	"ignoredFiles": [
+		".DS_Store",
+		"Thumbs.db",
+		".git",
+		".gitignore",
+		".idea",
+		"README.md",
+		"LICENSE",
+		"web.iml"
+	],
+	"validTree": {
+		"children": [
+			{
+				"name": "package.json",
+				"extension": ".json"
+			},
+			{
+				"name": "public",
+				"children": [
+					{
+						"name": "index.html",
+						"extension": ".html"
+					}
+				]
+			},
+			{
+				"name": "src",
+				"children": [
+					{
+						"name": "index.js",
+						"extension": ".js"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,18 @@
+{
+  "name": "react-basic",
+  "version": "0.1.0",
+  "description": "Template that uses react and react-dom for quick prototypes.",
+	"dependencies": {
+		"react": "15.4.2",
+		"react-dom": "15.4.2"
+	},
+	"devDependencies": {
+		"babel-preset-es2015": "*",
+		"babel-preset-react": "*",
+		"eslint-plugin-import": "*",
+		"eslint-plugin-jsx-a11y": "*",
+		"eslint-plugin-react": "*",
+		"eslint-config-airbnb": "*",
+		"eslint-config-airbnb-base": "*"
+	}
+}

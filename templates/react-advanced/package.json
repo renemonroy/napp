@@ -1,0 +1,33 @@
+{
+  "name": "react-advanced",
+  "version": "0.1.0",
+  "description": "Template for bigger projects. Uses router, redux, sagas, immutable and others.",
+  "dependencies": {
+    "babel-polyfill": "*",
+    "history": "^4.6.1",
+    "immutable": "^3.8.1",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0-beta.8",
+    "react-router-redux": "^5.0.0-alpha.4",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.0",
+    "redux-saga": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "eslint": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-react": "*"
+  },
+  "private": true,
+  "scripts": {
+    "start": "napp start"
+  }
+}
