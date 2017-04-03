@@ -140,10 +140,10 @@ export const useLocalTemplate = (templateName, directory, step = '') => {
 	return directory;
 };
 
-export const useRemoteTemplate = (repository, directory, options, step = '') => (
+export const useRemoteTemplate = (repository, directory, step = '') => (
 	new Promise((resolve, reject) => {
 		const spinner = ora(`${step} Paste remote template to new directory`).start();
-		downloadGitRepo(repository, directory, options, (err) => {
+		downloadGitRepo(repository, directory, { clone: true }, (err) => {
 			if (err) {
 				spinner.fail();
 				reject({
@@ -158,13 +158,12 @@ export const useRemoteTemplate = (repository, directory, options, step = '') => 
 	})
 );
 
-export const useTemplateMiddleware = (appConfig, step = '') => (
-	new Promise((resolve, reject) => {
-		const { defaultTemplate } = settings;
-		const { template = defaultTemplate } = appConfig;
-		resolve();
-	})
-);
+export const useTemplateMiddleware = (template = settings.defaultTemplate, directory, step = '') => {
+	if (template.indexOf('/') > -1) {
+		return useRemoteTemplate(template, directory, step);
+	}
+	return useLocalTemplate(template, directory, step);
+};
 
 export const installTemplate = (templateDirectory, preferredName, step = '') => (
 	new Promise((resolve, reject) => {
@@ -481,7 +480,7 @@ export const runDevServer = (envConfig, serverConfig, handleStats, step = '') =>
 export const createApp = (config, done = () => {}) => {
 	Promise.resolve()
 		.then(() => createDirectory(config.name, '', '[1/4]'))
-		.then(root => useLocalTemplate(config.template, root, '[2/4]'))
+		.then(directory => useTemplateMiddleware(config.template, directory, '[2/4]'))
 		.then(root => configurePackage(config, root, '[3/4]'))
 		.then(root => installDependencies(root, '[4/4]'))
 		.then((proc) => {
