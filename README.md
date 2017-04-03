@@ -3,7 +3,7 @@
 ![npm](https://img.shields.io/badge/version-0.1.0-blue.svg?style=flat-square)
 [![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://bitbucket.nike.com/users/rmonr1/repos/napp/browse/LICENSE)
 [![Slack](https://img.shields.io/badge/chat-Slack-f35584.svg?style=flat-square)](https://nikecdt.slack.com/messages/napp)
-![napp init](https://bitbucket.nike.com/users/rmonr1/repos/napp/browse/assets/napp-init.jpg?raw=)
+![napp init](./assets/napp-init.jpg)
 
 ## Overview
 Napp it’s a cli tool that initializes/run projects that follow a strict but basic structure (template). The goal of napp is to start and build projects faster, so it comes with pre-installed configurations for Webpack, Eslint and Babel.
