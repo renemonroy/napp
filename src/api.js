@@ -151,8 +151,16 @@ export const useRemoteTemplate = (repository, directory, clone, step = '') => (
 					errors: [err.message.trim],
 				});
 			} else {
-				spinner.succeed();
-				resolve(directory);
+				const templateTree = dirTree(directory);
+				if (!isValidTemplateTree(templateTree)) {
+					spinner.fail();
+					reject({
+						summary: 'Repo structure does not match template\'s tree requirements',
+					});
+				} else {
+					spinner.succeed();
+					resolve(directory);
+				}
 			}
 		});
 	})
