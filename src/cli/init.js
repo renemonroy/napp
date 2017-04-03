@@ -68,11 +68,11 @@ const showWizard = () => {
 		});
 };
 
-export default (projectName, source) => {
+export default (projectName, source, { clone = false }) => {
 	if (projectName && !source) {
-		confirm(JSON.stringify({ name: projectName, template: defaultTemplate }, null, '  '));
+		confirm(JSON.stringify({ name: projectName, template: defaultTemplate, clone }, null, '  '));
 	} else if (projectName && source) {
-		confirm(JSON.stringify({ name: projectName, template: source }, null, '  '));
+		confirm(JSON.stringify({ name: projectName, template: source, clone }, null, '  '));
 	} else {
 		showWizard();
 	}

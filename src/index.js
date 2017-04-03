@@ -21,6 +21,7 @@ program
 program
 	.command('init [projectName] [source]')
 	.description('Initialize a new project inside current directory')
+	.option('-C, --clone', 'Force to init a project by downloading a template via ssh')
 	.action(cli.init);
 
 program
