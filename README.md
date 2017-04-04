@@ -13,6 +13,7 @@ It’s highly inspired by Facebook’s [create-react-app](https://github.com/fac
 Differences with create-react-app:
 
 * Napp uses templates, meaning you can build your own template from a code you wrote and save it for later use.
+* You can Initialize a template from a git repo without having to install them locally too.
 * It is not coupled with [React](https://facebook.github.io/react/), you can use whatever you want as long as the template follows a valid/simple structure.
 * You don’t need to **eject** to increase features on Webpack because you have the ability to **extend**, **overwrite** or **use your own** configurations.
 * It uses Webpack 2, which takes advantages of tree shaking and other awesome features.
@@ -36,7 +37,15 @@ Napp has **react-basic** and **react-advanced** as pre-installed templates to st
 ```
 napp init
 ```
-It will ask for basic information to create a new project. The next thing to do is to move to the new folder created (`cd you-project`) and run it with `napp run` or `npm start`.
+It will ask for basic information to create a new project. But you can also initialize a new project from a git repo. Napp uses [download-git-repo](https://github.com/flipxfx/download-git-repo) so you can do something like this:
+
+```
+napp init my-new-project github:renemonroy/react-basic-template --clone
+```
+
+The clone option is not needed but it will use ssh instead of https to download, which is useful (as long as your keys are configured correctly) for private repositories.
+
+The next thing to do is to move to the new folder created (`cd you-project`) and run it with `napp run` or `npm start`.
 This executes a **webpack-dev-server** with a default **dev** configuration but you can change it by adding the option *env* `--env prod` (prod is not recommended since can take a lot of time on compilings) or a configuration you created (more about this later).
 
 Here's a table of the available commands on napp:
