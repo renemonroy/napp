@@ -154,6 +154,7 @@ export const useRemoteTemplate = (repository, directory, clone, step = '') => (
 				const templateTree = dirTree(directory);
 				if (!isValidTemplateTree(templateTree)) {
 					spinner.fail();
+					fs.removeSync(directory);
 					reject({
 						summary: 'Repo structure does not match template\'s tree requirements',
 					});
