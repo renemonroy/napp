@@ -43,10 +43,9 @@ program
 	.action(cli.list);
 
 program
-	.command('make [template]')
-	.alias('mk')
-	.description('Make a template from current folder')
-	.action(cli.make);
+	.command('save [template]')
+	.description('Save a template from current or remote directories')
+	.action(cli.save);
 
 program
 	.command('remove [template] [templates...]')

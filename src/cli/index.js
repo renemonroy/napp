@@ -2,7 +2,7 @@ import init from './init';
 import list from './list';
 import run from './run';
 import build from './build';
-import make from './make';
+import save from './save';
 import remove from './remove';
 
 export default {
@@ -10,6 +10,6 @@ export default {
 	list,
 	run,
 	build,
-	make,
+	save,
 	remove,
 };

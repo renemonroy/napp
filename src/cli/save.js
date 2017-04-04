@@ -5,7 +5,7 @@ import chalk from 'chalk';
 import { createTemplate } from '../api';
 import { printErrors } from '../utilities';
 
-const makeTemplate = (templateName) => {
+const saveTemplate = (templateName) => {
 	const currentDirectory = fs.realpathSync(process.cwd());
 	if (templateName) {
 		return createTemplate(currentDirectory, templateName);
@@ -36,7 +36,7 @@ const makeTemplate = (templateName) => {
 export default (templateName) => {
 	console.log('Creating a template from current directory...');
 	console.log('');
-	makeTemplate(templateName)
+	saveTemplate(templateName)
 		.then(() => {
 			console.log('');
 			console.log('Success!');
