@@ -1,6 +1,6 @@
 {
   "name": "@nike/napp",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "An opinionated project runner which uses templates for fast development.",
   "private": false,
   "publishConfig": {
