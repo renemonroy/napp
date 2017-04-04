@@ -45,6 +45,8 @@ napp init my-new-project github:renemonroy/react-basic-template --clone
 
 The clone option is not needed but it will use ssh instead of https to download, which is useful (as long as your keys are configured correctly) for private repositories.
 
+Napp will use the default template if you run `napp init my-new-project` without a source argument.
+
 The next thing to do is to move to the new folder created (`cd you-project`) and run it with `napp run` or `npm start`.
 This executes a **webpack-dev-server** with a default **dev** configuration but you can change it by adding the option *env* `--env prod` (prod is not recommended since can take a lot of time on compilings) or a configuration you created (more about this later).
 
