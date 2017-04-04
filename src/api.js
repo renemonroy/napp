@@ -141,23 +141,21 @@ export const useLocalTemplate = (templateName, directory, step = '') => {
 };
 
 export const useRemoteTemplate = (repository, directory, clone, step = '') => (
-	new Promise((resolve, reject) => {
+	new Promise((resolve) => {
 		const spinner = ora(`${step} Paste remote template to new directory`).start();
 		downloadGitRepo(repository, directory, { clone }, (err) => {
 			if (err) {
 				spinner.fail();
-				reject({
-					summary: `Failed to download repotory ${repository}`,
-					errors: [err.message.trim],
-				});
+				log.error(`Failed to download repotory ${repository}`);
+				console.log(err.message.trim);
+				process.exit(1);
 			} else {
 				const templateTree = dirTree(directory);
 				if (!isValidTemplateTree(templateTree)) {
 					spinner.fail();
 					fs.removeSync(directory);
-					reject({
-						summary: 'Repo structure does not match template\'s tree requirements',
-					});
+					log.error('Repo structure does not match template\'s tree requirements');
+					process.exit(1);
 				} else {
 					spinner.succeed();
 					resolve(directory);
